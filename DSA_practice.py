@@ -20,10 +20,68 @@ right = len(lst) - 1
 
 while left < right:
     if lst[left] == 0:
+        # print("left", left)
         left += 1
+        # print("left .....", lst[left])
     elif lst[right] == 1:
+        # print("right", right)
         right -= 1
+        # print("right .........")
     else:
         lst[left], lst[right] = lst[right], lst[left]
 
-print(lst)
+# print(lst)
+
+
+# revese the number
+
+# lst = 5483
+# num = lst
+# count = 0
+# while num > 0:
+#     count++1
+#     num = num/10
+
+
+'''
+* * * *
+* * * *
+* * * *
+* * * *
+'''
+
+for i in range(4):
+    for j in range(4):
+        print("*", end=" ")
+    print(" ")
+
+print("------------------------------------------")
+
+'''
+00000
+0000
+000
+00
+0
+'''
+
+for i in range(5):
+    for j in range(5-i):
+        print("0", end="")
+    print("")
+
+print("-----------------------------------------------")
+
+'''
+54321
+4321
+321
+21
+1
+'''
+
+for i in range(5, 0, -1):
+    for j in range(i, 0, -1):
+        print(j, end="")
+
+    print("")
