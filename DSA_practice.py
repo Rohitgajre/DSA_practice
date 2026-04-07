@@ -85,3 +85,25 @@ for i in range(5, 0, -1):
         print(j, end="")
 
     print("")
+
+print("----------------------------------")
+'''
+  0
+ 000
+00000
+
+'''
+
+for i in range(5, 0, -2):
+    for j in range(i//2):
+        print(" ", end="")
+    for K in range(6-i):
+            print("0", end="")
+    print("")
+
+'''
+     0
+   0 0 0
+ 0 0 0 0 0
+'''
+
