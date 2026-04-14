@@ -253,3 +253,202 @@ for i in range(1, 11):
         print(chr(74 - (i - 1)), end=" ")
 
     print()
+
+print("------------------------------------------------------------")
+
+'''
+Pattern-8:
+J I H G F E D C B A
+J I H G F E D C B A
+J I H G F E D C B A
+J I H G F E D C B A
+J I H G F E D C B A
+J I H G F E D C B A
+J I H G F E D C B A
+J I H G F E D C B A
+J I H G F E D C B A
+J I H G F E D C B A
+'''
+
+for i in range(1, 11):
+    for j in range(1, 11):
+        # print(chr(75-(j-1)), end=" ")
+        print(chr(65+10-j), end=" ")
+    print()
+
+print("------------------------------------------------------------")
+
+'''
+Pattern-9:
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * * * *
+* * * * * * *
+* * * * * * * *
+* * * * * * * * *
+* * * * * * * * * *
+'''
+
+n = 10
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print("*", end=" ")
+    print()
+
+
+print("-----------------------------------------------")
+
+'''
+Pattern-10:
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+6 6 6 6 6 6
+7 7 7 7 7 7 7
+8 8 8 8 8 8 8 8
+9 9 9 9 9 9 9 9 9
+10 10 10 10 10 10 10 10 10 10
+
+'''
+n = 11
+for i in range(1, n+1):
+    for j in range(1, i):
+        print(i-1, end=" ")
+    print()
+
+
+print("----------------------------------------------")
+
+'''
+Pattern-11:
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+1 2 3 4 5 6 7
+1 2 3 4 5 6 7 8
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9 10
+
+'''
+n = 10
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(j, end=" ")
+    print()
+
+
+print("---------------------------------------------------------")
+'''
+Pattern-12:
+A
+B B
+C C C
+D D D D
+E E E E E
+F F F F F F
+G G G G G G G
+H H H H H H H H
+I I I I I I I I I
+J J J J J J J J J J
+'''
+n = 10
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(chr(64+i), end=" ")
+    print()
+
+print("----------------------------------------------")
+'''
+Pattern-13:
+A
+A B
+A B C
+A B C D
+A B C D E
+A B C D E F
+A B C D E F G
+A B C D E F G H
+A B C D E F G H I
+A B C D E F G H I J
+'''
+
+n = 10
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(chr(65+j-1), end=" ")
+    print()
+
+
+print("-----------------------------------------------")
+
+'''
+Pattern-14:
+* * * * * * * * * *
+* * * * * * * * *
+* * * * * * * *
+* * * * * * *
+* * * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+'''
+
+for i in range(1, n+1):
+    for j in range(1, n+2-i):
+        print("* ", end=" ")
+    print()
+
+
+print("---------------------------------------------")
+
+'''
+Pattern-15:
+1 1 1 1 1 1 1 1 1 1
+2 2 2 2 2 2 2 2 2
+3 3 3 3 3 3 3 3
+4 4 4 4 4 4 4
+5 5 5 5 5 5
+6 6 6 6 6
+7 7 7 7
+8 8 8
+9 9
+10
+
+'''
+for i in range(1, n+1):
+    for j in range(1, n+2-i):
+        print(i, end=" ")
+    print()
+
+
+print("--------------------------------------------")
+
+'''
+Pattern-16:
+1 2 3 4 5 6 7 8 9 10
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8
+1 2 3 4 5 6 7
+1 2 3 4 5 6
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+
+'''
+n = 10
+for i in range(1, n+1):
+    for j in range(1, n+2-i):
+        print(j, end=" ")
+    print()
