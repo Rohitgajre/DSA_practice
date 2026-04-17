@@ -452,3 +452,156 @@ for i in range(1, n+1):
     for j in range(1, n+2-i):
         print(j, end=" ")
     print()
+
+
+print("----------------------------------------------------")
+
+'''
+Pattern-17:
+A A A A A A A A A A
+B B B B B B B B B
+C C C C C C C C
+D D D D D D D
+E E E E E E
+F F F F F
+G G G G
+H H H
+I I
+J
+'''
+
+n = 10
+for i in range(1, n+1):
+    for j in range(1, n+2-i):
+        print(chr(64+i), end=" ")
+    print()
+
+
+print("-----------------------------------------------")
+
+'''
+Pattern-18:
+A B C D E F G H I J
+A B C D E F G H I
+A B C D E F G H
+A B C D E F G
+A B C D E F
+A B C D E
+A B C D
+A B C
+A B
+A
+
+'''
+n = 10
+for i in range(1, n+1):
+    for j in range(1, n+2-i):
+        print(chr(64+j), end=" ")
+    print()
+
+print("-------------------------------------------------")
+
+
+'''
+Pattern-19:
+10 10 10 10 10 10 10 10 10 10
+9 9 9 9 9 9 9 9 9
+8 8 8 8 8 8 8 8
+7 7 7 7 7 7 7
+6 6 6 6 6 6
+5 5 5 5 5
+4 4 4 4
+3 3 3
+2 2
+1
+'''
+
+n = 10
+for i in range(1, n+1):
+    for j in range(1, n+2-i):
+        print(n+1-i, end=" ")
+    print()
+
+
+print("-------------------------------------------------s")
+
+'''
+Pattern-20:
+10 9 8 7 6 5 4 3 2 1
+10 9 8 7 6 5 4 3 2
+10 9 8 7 6 5 4 3
+10 9 8 7 6 5 4
+10 9 8 7 6 5
+10 9 8 7 6
+10 9 8 7
+10 9 8
+10 9
+10
+
+'''
+
+for i in range(1, n+1):
+    for j in range(1, n+2-i):
+        print(n+1-j, end=" ")
+    print()
+
+print("-----------------------------------------------------------")
+
+'''
+Pattern-21:
+J J J J J J J J J J
+I I I I I I I I I
+H H H H H H H H
+G G G G G G G
+F F F F F F
+E E E E E
+D D D D
+C C C
+B B
+A
+
+'''
+for i in range(1, n+1):
+    for j in range(1, n+2-i):
+        print(chr(65+n-i), end=" ")
+    print()
+
+
+print('-------------------------------------------------------------')
+
+'''
+Pattern-22:
+J I H G F E D C B A
+J I H G F E D C B
+J I H G F E D C
+J I H G F E D
+J I H G F E
+J I H G F
+J I H G
+J I H
+J I
+J
+
+'''
+
+for i in range(1, n+1):
+    for j in range(1, n+2-i):
+        print(chr(65+n-j), end=" ")
+    print()
+
+
+'''
+Pattern-23:
+
+ *
+ **
+ ***
+ ****
+ *****
+ ******
+ *******
+ *****
+ *********
+**********
+ 
+'''
