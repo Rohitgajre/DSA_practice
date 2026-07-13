@@ -637,3 +637,42 @@ for i in range(1, n+1):
     for j in range(1, 1+i):
         print( "* ", end="")
     print()
+
+print("------------------------------------------------")
+
+'''Input: nums = [-4,-1,0,3,10]
+Output: [0,1,9,16,100]
+Explanation: After squaring, the array becomes [16,1,0,9,100].
+After sorting, it becomes [0,1,9,16,100].'''
+
+
+# nums = [-4, -1, 0, 3, 10]
+# output = []
+# for i in range(len(nums)):
+#     squr = nums[i] * nums[i]    
+#     output.append(squr)
+#     for j in range(len(output)):
+#         if output[j] > output[j]:
+#             print(output)
+
+#     print("output", output)
+
+nums = [-4, -1, 0, 3, 10]
+
+n = len(nums)
+result = [0] * n
+
+left = 0
+right = n - 1
+pos = n - 1
+
+while left <= right:
+    if abs(nums[left]) > abs(nums[right]):
+        result[pos] = nums[left] * nums[left]
+        left += 1
+    else:
+        result[pos] = nums[right] * nums[right]
+        right -= 1
+    pos -= 1
+
+print(result)
